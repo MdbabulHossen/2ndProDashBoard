@@ -343,6 +343,44 @@ body{
       }
   
   }
+  @media screen and (max-width:1300px) {
+    .home_and_dashboard{
+      display: none;
+      text-align: center;
+    }
+  
+    .search_bar input{
+      display:flex;
+      margin-left: 450px;
+    } 
+    
+    .inner_search i{
+      left: 460px !important;
+    }
+  
+    .header_main_logo img{
+      display: none;
+    }
+  
+    .sidebar{
+      left:-250px;
+    }
+  
+  
+    .inner_search i{
+      left: 310px;
+    }
+  
+    label #bars {
+      top: 20px;
+      left: 20px;
+    }
+  
+    #check:checked ~ .sidebar {
+      left:0px;
+    }
+  
+  }
   @media screen and (max-width:1190px) {
     .home_and_dashboard{
       display: none;
@@ -355,7 +393,7 @@ body{
   } 
   
   .inner_search i{
-    left: 310px;
+    left: 310px !important;
   }
   
   
@@ -367,6 +405,62 @@ body{
   
   }
   
+  
+  @media screen and (max-width:960px) {
+    .search_bar input{
+      margin-left: 100px;
+      
+    }
+  
+    .inner_search i{
+      left: 110px !important;
+    }
+  
+  
+  
+  }
+  
+  @media screen and (max-width:720px) {
+    .search_bar input{
+      margin-left: 50px;
+      width: 200px;
+      display: none;
+    }
+  
+  .copy_search{
+    display: none;
+  }
+  
+  .inner_search i{
+    font-size: 22px;
+    color: white;
+    top: -8px;
+    left: 20px !important;
+  }
+  
+  label #close{
+    top: 70px;
+    left: 180px !important;
+  }
+  
+  
+  }
+  
+  @media screen and (max-width:415px) {
+    .inner_search i{
+      left: 10px !important;
+    }
+  
+    label #bars{
+      left: 10px;
+      font-size: 16px;
+    }
+  
+    .inner_search i{
+      font-size: 16px;
+    }
+  
+  }
   @media screen and (max-width:1020px) {
   
     .sidebar{
@@ -814,4 +908,15 @@ position: relative;
 .mystyleTwo{
     margin-left: 280px;
     transition: 0.7s;
+}
+
+@media screen and (max-width:1300px) {
+    .mystyle{
+        margin-left: 40px;
+
+    }
+    .mystyleTwo{
+        margin-left: 40px;
+    }
+    
 }
