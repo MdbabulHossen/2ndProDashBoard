@@ -32,7 +32,11 @@
     />
     <!-- bootstrap link -->
   
-  
+
+   
+
+
+
   </head>
   <body style="background-color:rgba(243, 237, 237, 0.877)">
    
@@ -53,14 +57,13 @@
 
     <div class="search_bar">
       <div class="inner_search">
-        <input type="search" class="" placeholder="Search here" /><span
-          class="copy_search"
+        <input type="text" value="https://22data.net/johndoe" class="input_text" style="color: #000000a1; font-weight: 400px;"  /><span
+          class="copy_search" title="click here to copy this url"
           >COPY</span
         >
-        <i class="fa fa-search"></i>
+        <!-- <i class="fa fa-search"></i> -->
       </div>
     </div>
-
    
 
     <div class="msg_noti_user">
@@ -348,10 +351,10 @@
           <div class="second_sec_head">
             <h3>THE 22DATA COMMUNITY</h3>
           </div>
-          <div class="second_sec_backimg_four">
+          <div class="second_sec_backimg_four" >
             <br>
                 <div class="telegram_img" >
-                  <img src="images/Telegram_logo.svg.png" alt="">
+                  <img src="images/Telegram_logo.svg.png" alt="" >
                 </div>
           </div>
         </div>
@@ -404,17 +407,17 @@
           
            <div class="live_event_content">
               <b>LIVE EVENT</b>
-              <h4>Connect with Industry
+              <h4>Connect with Industry <br>
                 Experts - <span style="color:#E1A250">22Data </span>  <span style="color: #BA302E;">Live</span> 
-              
+               <br>
                 <span style="font-size: 19px; line-height: 3;">Speaker: John Doe</span>
               </h4>
 
-              <h5>How I made 160K with Facebook ads! Facebook Marketing Secrets</h5>
+              <h5>How I made 160K with Facebook <br> ads! Facebook Marketing Secrets</h5>
              
-              <p>John has more than 9 years 
-                experience in running paid traffic
-                ads on facebook ads. He is the
+              <p>John has more than 9 years <br>
+                experience in running paid traffic <br>
+                ads on facebook ads. He is the <br>
                 head of leads at X Company. </p>
 
                <h6>Date: XX-XX-XX <br>
@@ -492,6 +495,20 @@ document.getElementById("close").addEventListener("click", ()=>{
  
  
  </script>
+
+
+ <!-- copy the url text -->
+ <script>
+  let copy_button = document.querySelector('.copy_search').addEventListener('click',function(){
+    let input_text = document.querySelector('.input_text');
+    input_text.select();
+    document.execCommand("copy");
+  })
+</script>
+
+
+
+
 
    <!-- bootstrap link -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
